@@ -25,7 +25,12 @@
       <div id="passwordDiv"><label for="password">Password:</label><input type="password" id="password" placeholder="Password"></div>
       <input type="submit" id="submitButton" value="Login!">
     </div>
-
+    
+    <div>
+      <span id="loggedIn">Logged in as: <span id="displayUser">___</span></span>
+      <span id="notLoggedIn">Not currently Logged In</span>
+    </div>
+    
     <div id="adminDiv">
       <input id="adminButton" type="button" onclick="login('admin','admin'); window.open('//cse.taylor.edu/~cos143/users.php')"
                               value="Gotta hack 'em all"><br></div>
