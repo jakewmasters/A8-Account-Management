@@ -11,8 +11,8 @@ function createAccount(){
 	ajax.send(loginInfo);
 }
 
-function login() {
-	var params = "Name=admin&Password=admin";
+function login(username, password) {
+	var params = "Name="+ username + "&Password=" + password;
 	var ajax = new XMLHttpRequest();
 	ajax.responseType = "json";
 	ajax.addEventListener("load", function() { 
