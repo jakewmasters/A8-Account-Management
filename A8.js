@@ -25,9 +25,11 @@ function login(username, password) {
 
 function showLogin(){
     document.getElementById("loginDiv").style.display = "block";
+    document.getElementById("loginButtonDiv").style.display = "block";
     document.getElementById("welcomeOptionsDiv").style.display = "none";
 }
-
-function loggedInNotification() {
-    
+function showRegister(){
+    document.getElementById("loginDiv").style.display = "block";
+    document.getElementById("registerButtonDiv").style.display = "block";
+    document.getElementById("welcomeOptionsDiv").style.display = "none";
 }
