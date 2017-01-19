@@ -21,13 +21,13 @@
     </div>
     
     <div id="loginDiv">
-      <div id="usernameDiv"><label for="username">Username:</label><input type="text" id="username"
+      <div id="usernameDiv"><label for="username">Username:</label><input type="text" id="usernameInput"
                                                                           placeholder="Username"
                                                                           onkeyup="validate(this)"
                                                                           maxlength="5"></div>
       
       <div id="passwordDiv"><label for="password">Password:</label><input type="password"
-                                                                          id="password"
+                                                                          id="passwordInput"
                                                                           placeholder="Password"
                                                                           onkeyup="validate(this)"
                                                                           maxlength="5"></div>
@@ -37,16 +37,35 @@
       <input type="submit" id="submitButton" value="Login!" onclick="login()">
     </div>
     
+    <div id="changePasswordDiv">
+      <input type="submit" id="changePassword" value="Change Password!" onclick="changePassword()">
+    </div>
+	
+	
+	<div id="logoutButtonDiv">
+      <input type="submit" id="logoutButton" value="Logout!" onclick="logout()">
+    </div>
+	
+
     <div id="registerButtonDiv">
-      <input type="submit" id="registerButton" value="Register!" onclick="">
+      <input type="submit" id="registerButton" value="Register!" onclick="createAccount()">
     </div>
     
     <div>
       <span id="loggedIn">Not Logged In</span>
     </div>
-    a
+	
+    <div id="notification"></div>
+	
+
+	<p>Matt Hapner and Jake Masters<p>
+<!--
     <div id="adminDiv">
       <input id="adminButton" type="button" onclick="login('admin','admin'); window.open('//cse.taylor.edu/~cos143/users.php')"
-                              value="Gotta hack 'em all"><br></div>
+                              value="Gotta hack 'em all">
+	<br>
+	</div>
+-->
 </body>
+
 </html>
