@@ -21,12 +21,20 @@
     </div>
     
     <div id="loginDiv">
-      <div id="usernameDiv"><label for="username">Username:</label><input type="text" id="username" placeholder="Username"></div>
-      <div id="passwordDiv"><label for="password">Password:</label><input type="password" id="password" placeholder="Password"></div>
+      <div id="usernameDiv"><label for="username">Username:</label><input type="text" id="username"
+                                                                          placeholder="Username"
+                                                                          onkeyup="validate(this)"
+                                                                          maxlength="5"></div>
+      
+      <div id="passwordDiv"><label for="password">Password:</label><input type="password"
+                                                                          id="password"
+                                                                          placeholder="Password"
+                                                                          onkeyup="validate(this)"
+                                                                          maxlength="5"></div>
     </div>
     
     <div id="loginButtonDiv">
-      <input type="submit" id="submitButton" value="Login!">
+      <input type="submit" id="submitButton" value="Login!" onclick="login()">
     </div>
     
     <div id="registerButtonDiv">
