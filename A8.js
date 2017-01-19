@@ -22,3 +22,7 @@ function login(username, password) {
 	ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	ajax.send(params);
 }
+
+function showLogin(){
+    document.getElementById("loginDiv").style.visibility = "visible";
+}
