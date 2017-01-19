@@ -10,20 +10,24 @@
 
   <body>
     <script src="A8.js" defer></script>
+    
     <h1>Account Management</h1>
-    <div id="existingAccountDiv">
-      <input id="existingAccount" type="button" onclick="" value="Login with existing account">
+    
+    <div id="welcomeOptionsDiv">
+      <input id="existingAccount" type="button" onclick="showLogin();" value="Login with existing account">
+      <div class="or">or</div>
+      <input id="createAccount" type="button" onclick="showRegister()" value="Create new account">
       <br>
     </div>
-    <span>or<span>
-  <div id="createAccountDiv"><input id="createAccount" type="button" onclick=""
-              value="Create new account"><br></div>
-  <div id="adminDiv"><input id="adminButton" type="button" onclick="login('admin','admin'); window.open('//cse.taylor.edu/~cos143/users.php')"
-              value="Gotta hack 'em all"><br></div>
-  <div id="usernameDiv"><label for="username">Username:</label>
-    <input type="text" id="username" placeholder="Username"></div>
-  <div id="passwordDiv"><label for="password">Password:</label>
-    <input type="password" id="password" placeholder="Password"></div>
-  <input type="submit" id="submitButton" value="Submit!">
+    
+    <div id="loginDiv">
+      <div id="usernameDiv"><label for="username">Username:</label><input type="text" id="username" placeholder="Username"></div>
+      <div id="passwordDiv"><label for="password">Password:</label><input type="password" id="password" placeholder="Password"></div>
+      <input type="submit" id="submitButton" value="Login!">
+    </div>
+
+    <div id="adminDiv">
+      <input id="adminButton" type="button" onclick="login('admin','admin'); window.open('//cse.taylor.edu/~cos143/users.php')"
+                              value="Gotta hack 'em all"><br></div>
 </body>
 </html>
