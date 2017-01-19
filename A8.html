@@ -16,21 +16,27 @@
     <div id="welcomeOptionsDiv">
       <input id="existingAccount" type="button" onclick="showLogin();" value="Login with existing account">
       <div class="or">or</div>
-      <input id="createAccount" type="button" onclick="showRegister()" value="Create new account">
+      <input id="createAccount" type="button" onclick="showRegister();" value="Create new account">
       <br>
     </div>
     
     <div id="loginDiv">
       <div id="usernameDiv"><label for="username">Username:</label><input type="text" id="username" placeholder="Username"></div>
       <div id="passwordDiv"><label for="password">Password:</label><input type="password" id="password" placeholder="Password"></div>
+    </div>
+    
+    <div id="loginButtonDiv">
       <input type="submit" id="submitButton" value="Login!">
     </div>
     
-    <div>
-      <span id="loggedIn">Logged in as: <span id="displayUser">___</span></span>
-      <span id="notLoggedIn">Not currently Logged In</span>
+    <div id="registerButtonDiv">
+      <input type="submit" id="registerButton" value="Register!" onclick="">
     </div>
     
+    <div>
+      <span id="loggedIn">Not Logged In</span>
+    </div>
+    a
     <div id="adminDiv">
       <input id="adminButton" type="button" onclick="login('admin','admin'); window.open('//cse.taylor.edu/~cos143/users.php')"
                               value="Gotta hack 'em all"><br></div>
