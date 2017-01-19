@@ -24,5 +24,10 @@ function login(username, password) {
 }
 
 function showLogin(){
-    document.getElementById("loginDiv").style.visibility = "visible";
+    document.getElementById("loginDiv").style.display = "block";
+    document.getElementById("welcomeOptionsDiv").style.display = "none";
+}
+
+function loggedInNotification() {
+    
 }
