@@ -22,11 +22,13 @@ h2 {
 }
 
 #usernameDiv {
+  text-align: center;
   position: relative;
   top: 60px;
 }
 
 #passwordDiv {
+  text-align: center;
   position: relative;
   top: 60px;
 }
@@ -34,6 +36,15 @@ h2 {
 #submitButton {
   position: relative;
   top: 70px;
+}
+#registerButton {
+  text-align: center;
+  position: relative;
+  top: 70px;
+}
+#registerButtonDiv {
+  text-align: center;
+  display: none;
 }
 #welcomeOptionsDiv {
   position: relative;
@@ -47,13 +58,14 @@ h2 {
   text-align: center;
   display: none;
 }
-#loggedIn{
+#loginButtonDiv{
+  text-align: center;
   display: none;
 }
-#notLoggedIn{
-  float:right;
+#loggedIn{
+  display: block;
   position: absolute;
-  color: rgb(0,160,255);
-  top: 0%;
+  color: rgb(0,120,255);
+  top: 1%;
   left: 1%;
 }
