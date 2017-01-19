@@ -1,0 +1,10 @@
+* {
+	background-color: black;
+	font-family: 'Press Start 2P', cursive;
+	color: #37ff00;
+}
+
+br {
+   display: block;
+   line-height:40px;
+}
